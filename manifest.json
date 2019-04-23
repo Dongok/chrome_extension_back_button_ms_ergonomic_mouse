@@ -1,0 +1,19 @@
+{
+	"name": "back_for_ms_ergonomic_mouse",
+	"version": "0.2",
+	"description": "support back button of ergonomic mouse in mac os",
+	"browser_action": {
+		"default_title": "support_for_ms_ergonomic_mouse",
+		"default_icon": "icon.png"		
+	},
+	"permissions":[
+		"<all_urls>"
+	],
+	"content_scripts":[
+		{
+		"matches":["<all_urls>"],
+		"js":["content.js"]
+		}
+	],
+	"manifest_version": 2	
+}
